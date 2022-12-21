@@ -1,0 +1,122 @@
+from random import randint
+
+B = ["""[1,1],[2,1],[3,1],[4,1],[5,1],[6,1]
+     [1,2],[2,2],[3,2],[4,2],[5,2],[6,2] 
+     [1,3],[2,3],[3,3],[4,3],[5,3],[6,3]
+     [1,4],[2,4],[3,4],[4,4],[5,4],[6,4] 
+     [1,5],[2,5],[3,5],[4,5],[5,5],[6,5] 
+     [1,6],[2,6],[3,6],[4,6],[5,6],[6,6]"""]
+
+class Dot:
+    def __eq__(self, x, y):
+        self.x = x
+        self.y = y
+
+class Ship:
+    def __init__(self, lenght, nose, orient, life):
+        self.lenght = lenght
+        self.nose = nose
+        self.orient = orient
+        self.life = life
+
+    def Dots(self,a):
+        self.a= list[str]=a
+        return lenght
+        return orient
+
+
+class Board:
+    def __init__(self, spisok, ships, hid, ships_alive):
+        self.spisok = int(input())=spisok
+        self.ships = int(input())=ships
+        self.hid = bool=hid
+        self.ships_alive =ships_alive
+
+        if 0 < ships_alive < 11:
+            bool = ships_alive
+            ships_alive = True
+        else:
+            bool = ships_alive
+            ships_alive = False
+
+    def Add_Ship(self, a, b):
+        self.a = a
+        self.b = b
+        try:
+            if (a or b in sell) or (a or b not in range(0,7)):
+                raise ValueError
+        except ValueError:
+            print("Вы не можете поставить корабль сюда")
+
+    def Contour(self, sell):
+        self.sell = list[str] = sell
+        if a or b in sell:
+            print("вы не можете поствавить корабль сюда")
+
+    def Out(self):
+        if Dots.a in range(0, 7):
+            return False
+        elif Dots.a not in range(0, 7):
+            return True
+
+    def Shot(self, x2,y2):
+        self.x2 = x2
+        self.y2 = y2
+        try:
+            if x2 and y2 not in range(0,7):
+                raise ValueError
+        except ValueError:
+            print("за пределами поля")
+
+    def ask(self):
+        pass
+
+    def move(self):
+        ask()
+        Board.Shot()
+        try:
+            if Board.Shot() not in range (0,7):
+                raise ValueError
+        except ValueError:
+            return False
+            print("За пределами поля")
+        else:
+            move()
+
+class AI(Player):
+    ask(randint(0,7),randint(0,7))
+
+class User(Player):
+    ask(int(input("Введите координаты удара")))
+
+class Game:
+    def __init__(self,U,B,ai,B2):
+        self.U = User()
+        self.B = B
+        self.ai = AI()
+        self.B2 = B2
+
+    def random_board(self,s):
+        self.s= Ship()
+        for i in range(0,1000):
+            Ship(randint,randint,randint)
+            if i == 1000 and i not in range(0,7):
+                random_board()
+            else:
+                Board(B,Ship(),True,True)
+
+
+    def greet(self):
+        print("""Добро пожаловать в игру Морской бой!,
+              Формат ввода: целые числа от 0 до 7""")
+
+    def loop(self):
+        mode()
+
+    def start(self):
+        greet()
+        loop()
+
+G=Game()
+start()
+
